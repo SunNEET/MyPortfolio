@@ -3,6 +3,10 @@ class PortfoliosController < ApplicationController
     @portfolio_items = Portfolio.all
   end
   
+  def show
+    @portfolio_item = Portfolio.find(params[:id])
+  end
+
   def new
     @portfolio_item = Portfolio.new
   end
@@ -24,4 +28,6 @@ class PortfoliosController < ApplicationController
       redirect_to portfolios_path, notice: "Your portfolio item is updated"
     end
   end
+
+
 end
