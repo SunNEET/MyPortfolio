@@ -6,7 +6,7 @@ class Portfolio < ApplicationRecord
 	validates :title, :body, :main_image, :thumb_image, presence: true
 
 	scope :angular, lambda { where(subtitle: 'Angular') }
-	scope :ruby_on_rails, lambda { where(subtitle: 'Ruby on Rails') }
+	scope :ruby_on_rails, -> { where(subtitle: 'Ruby on Rails') }
 
 	after_initialize :set_defaults
 
