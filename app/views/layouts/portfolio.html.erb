@@ -11,7 +11,7 @@
   <body>
 
     <%= render 'shared/portfolio_nav' %>
-    <%= render 'shared/portfolios_masthead' %>
+    <%= render 'shared/portfolios_masthead' unless logged_in?(:site_admin) %>
 
     <%= yield %>
 
