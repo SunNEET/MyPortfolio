@@ -28,7 +28,7 @@ puts "5 skills created"
     subtitle: "Ruby on Rails",
     body: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
     main_image: "http://via.placeholder.com/600x400",
-    thumb_image: "http://via.placeholder.com/350x250"
+    thumb_image: "http://via.placeholder.com/350x200"
   )
 end
 
@@ -38,7 +38,7 @@ end
     subtitle: "Angular",
     body: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
     main_image: "http://via.placeholder.com/600x400",
-    thumb_image: "http://via.placeholder.com/350x250"
+    thumb_image: "http://via.placeholder.com/350x200"
   )
 end
 
