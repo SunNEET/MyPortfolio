@@ -14,6 +14,7 @@ ready = ->
 		updated_order = []
 		set_positions()
 		$('.card').each (i) ->
+			console.log($(this).attr("class").split(' '))
 			updated_order.push
 				id: $(this).data('id')
 				position: i+1

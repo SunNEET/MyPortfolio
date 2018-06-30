@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   get "about", to: "pages#about"
   get "contact", to: "pages#contact"
 
-  resources :portfolios
+  resources :portfolios do
+    put :sort, on: :collection
+  end
   get 'angular-items', to: "portfolios#angular"
   
   resources :blogs do

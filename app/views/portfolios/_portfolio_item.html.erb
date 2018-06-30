@@ -1,10 +1,10 @@
 <div class="col-md-4">
-	<div class="card mb-4 box-shadow">
+	<div class="card mb-4 box-shadow" data-id="<%= item.id %>">
 		<%= image_tag item.thumb_image, class: "card-img-top" if !item.thumb_image.nil? %>
 		<div class="card-body">
 		  <p class="card-text">
 		  	<span><%= link_to item.title, portfolio_path(item.id) %></span>
-		  	<span><%= item.subtitle %></span>
+		  	<%= item.subtitle %>
 		  </p>
 		</div>
 	</div>
